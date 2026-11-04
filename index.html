@@ -168,7 +168,7 @@
       <pre class="command">pytest test_leap_year.py</pre>
     </li>
     <li>
-      <p><strong>Switch your editor's AI to a read-only mode</strong> so it can't change your code. In Codex, choose <strong>Chat</strong> mode. In Claude Code, use <strong>plan mode</strong> (Shift+Tab). Then ask:</p>
+      <p><strong>Switch your editor's AI to a read-only mode</strong> so it can't change your code. In Codex, use <strong>plan mode</strong> (type <code>/plan</code>). In Claude Code, use <strong>plan mode</strong> (Shift+Tab). Then ask:</p>
       <pre class="prompt">Look at is_leap_year in leap_year.py and the failing tests in test_leap_year.py. Point me at the bug and explain why those tests fail. Don't edit any files, rewrite the code, or show me a fix.</pre>
       <div class="alt">
         <p><strong>Using a browser chat instead?</strong> Paste the function from <code>leap_year.py</code> and the failing test output, then this prompt:</p>
@@ -218,7 +218,7 @@ cipher: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</pre>
       <pre class="command">pytest test_caesar.py</pre>
     </li>
     <li>
-      <p><strong>Switch your editor's AI to a read-only mode</strong> so it can't write the code for you. In Codex, choose <strong>Chat</strong> mode. In Claude Code, use <strong>plan mode</strong> (Shift+Tab), and if it asks to start editing, say no. Then ask:</p>
+      <p><strong>Switch your editor's AI to a read-only mode</strong> so it can't write the code for you. In Codex, use <strong>plan mode</strong> (type <code>/plan</code>). In Claude Code, use <strong>plan mode</strong> (Shift+Tab), and if it asks to start editing, say no. Then ask:</p>
       <pre class="prompt">I need to implement caesar_encrypt in caesar.py. First suggest an approach in plain words. Then walk me through it one step at a time. Don't edit any files and don't write the whole function. Give me one piece, explain why, and wait for me to write it. Then read caesar.py to check my work before moving on.</pre>
       <div class="alt">
         <p><strong>Using a browser chat instead?</strong> Paste the <code>caesar_encrypt</code> stub from <code>caesar.py</code>, then this prompt. Paste your code back after each step.</p>
@@ -258,12 +258,12 @@ cipher: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</pre>
       <p>Make an empty folder (for example, <code>level4</code>) and open it in your editor.</p>
     </li>
     <li>
-      <p><strong>Plan with the AI. No code yet.</strong> Switch your editor's AI to a read-only mode so it doesn't jump ahead to coding. In Codex, choose <strong>Chat</strong> mode. In Claude Code, use <strong>plan mode</strong> (Shift+Tab). Then ask:</p>
+      <p><strong>Plan with the AI. No code yet.</strong> Switch your editor's AI to a read-only mode so it doesn't jump ahead to coding. In Codex, use <strong>plan mode</strong> (type <code>/plan</code>). In Claude Code, use <strong>plan mode</strong> (Shift+Tab). Then ask:</p>
       <pre class="prompt">I need to write a program that splits a restaurant bill among friends. Before writing any code, ask me questions about what this program should do. Ask one at a time. Point out ambiguities and edge cases I haven't thought about.</pre>
     </li>
     <li><p><strong>Write a short plan yourself:</strong> the inputs, the outputs, the decisions you made, the edge cases, and the functions the program needs. Save it as <code>plan.md</code> in your folder.</p></li>
     <li>
-      <p><strong>Have the AI review your plan and build it.</strong> Now switch to a mode that can edit files. In Codex, choose <strong>Agent</strong> mode. In Claude Code, leave plan mode (Shift+Tab). Then ask:</p>
+      <p><strong>Have the AI review your plan and build it.</strong> Now switch to a mode that can edit files. In Codex or Claude Code, leave plan mode. Then ask:</p>
       <pre class="prompt">Read my plan in plan.md and critique the design. Then write the code and pytest tests that follow it.</pre>
     </li>
     <li><p>Run the tests yourself, then try the program. Check that it does what your plan says, not just that the tests pass.</p></li>

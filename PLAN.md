@@ -57,8 +57,8 @@ Decisions:
 - [x] One page with anchor sections.
 - [x] Code shown inline (in a collapsed "Show the code" section, loaded from `code/`) as well as offered as a zip.
 - [x] AI tool instructions: the default path assumes an AI agent in the editor (Codex extension or Claude Code), with a smaller "Using a browser chat instead?" option under each step.
-  - Levels 2 and 3: switch to a read-only mode (Codex **Chat** mode; Claude Code **plan mode**), and the prompt says "Don't edit any files." If the AI edits anyway, undo it.
-  - Level 4: plan in read-only mode and save the plan as `plan.md`, then switch to an editing mode (Codex **Agent**; leave plan mode in Claude Code) and have the AI read `plan.md` and build it.
+  - Levels 2 and 3: switch to a read-only mode (**plan mode**: `/plan` in Codex, Shift+Tab in Claude Code), and the prompt says "Don't edit any files." If the AI edits anyway, undo it.
+  - Level 4: plan in read-only mode and save the plan as `plan.md`, then leave plan mode and have the AI read `plan.md` and build it.
 
 ## Step 3 — Design each level together, then build it
 
