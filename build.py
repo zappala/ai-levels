@@ -12,12 +12,12 @@ LEVELS = {
     "level2": {
         "title": "Level 2: Find the bug",
         "source": "leap_year.py",
-        "tests": ["test_leap_year.py", "test_bonus.py"],
+        "tests": ["test_leap_year.py", "test_leap_year_bonus.py"],
     },
     "level3": {
         "title": "Level 3: Build it with AI as a guide",
         "source": "caesar.py",
-        "tests": ["test_caesar.py", "test_bonus.py"],
+        "tests": ["test_caesar.py", "test_caesar_bonus.py"],
     },
 }
 

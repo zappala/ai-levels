@@ -43,8 +43,8 @@ index.html
   9. Compare and reflect    (cohort comparison questions; the wrap-up question is on the slides only)
  10. Wrap-up              (header only; wrap-up content is on the slides)
 code/
-  level2/leap_year.py, test_leap_year.py
-  level3/caesar.py, test_caesar.py, test_bonus.py
+  level2/leap_year.py, test_leap_year.py, test_leap_year_bonus.py
+  level3/caesar.py, test_caesar.py, test_caesar_bonus.py
   level2.zip, level3.zip
 colab/
   level2.ipynb, level3.ipynb
@@ -94,14 +94,14 @@ For each level, one at a time:
     - Correct solution: `return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)`.
   - **Optional bonus, `count_leap_years(start, end)`:** an off-by-one bug where `range(start, end)` excludes `end`. The docstring says "inclusive."
     - Tests: (2000, 2024) → 7 and (2020, 2020) → 1 fail; (2001, 2003) → 0 and (2021, 2023) → 0 pass.
-    - Tests live in a separate `test_bonus.py`.
-  - **Files:** `leap_year.py` (both functions), `test_leap_year.py`, `test_bonus.py`.
+    - Tests live in a separate `test_leap_year_bonus.py`.
+  - **Files:** `leap_year.py` (both functions), `test_leap_year.py`, `test_leap_year_bonus.py`.
   - **Steps:**
     1. Run `pytest test_leap_year.py`.
     2. Paste the function and the failing output into the AI: *"Point me at the bug in this function and explain why these tests fail. Don't rewrite the code or show me a fix."*
     3. Fix it yourself and rerun pytest. If a new test fails, figure out why before asking again.
     4. If the AI rewrites the code, close the chat and fix it on your own.
-    5. Bonus: `pytest test_bonus.py`.
+    5. Bonus: `pytest test_leap_year_bonus.py`.
   - **Codex:** chat only, or tell it "Don't edit my files."
   - **No setup tutorial needed:** students have written Python and used pytest, so the site just lists the commands.
   - **Cohort comparison:** what did the AI point you at, what was your fix, and did a new test break along the way?
@@ -111,8 +111,8 @@ For each level, one at a time:
     - Tests: basic shift (`"abc"`, 1 → `"bcd"`), wraparound (`"xyz"`, 3 → `"abc"`), mixed case, punctuation and spaces unchanged, a negative shift, and a shift greater than 26.
   - **Optional bonus, `crack_caesar(ciphertext, crib)`:** return the shift that was used to encrypt `ciphertext`, given a word (`crib`) known to be in the message; return `None` if no shift works. This ties to the CS Passport CTF Caesar challenge.
     - Tests: for example, `crack_caesar(caesar_encrypt("meet at noon", 5), "noon") == 5`, a case with shift 0, and a `None` case.
-    - Tests live in a separate `test_bonus.py`.
-  - **Files:** `caesar.py` (both stubs), `test_caesar.py`, `test_bonus.py`.
+    - Tests live in a separate `test_caesar_bonus.py`.
+  - **Files:** `caesar.py` (both stubs), `test_caesar.py`, `test_caesar_bonus.py`.
   - **Prompt:** *"I need to implement this function. First suggest an approach in plain words. Then walk me through it one step at a time. Don't write the whole function. Give me one piece, explain why, and wait for me to write it and show you before moving on."*
   - **Rules:** type every line yourself. If the AI gives you the full function, don't copy it; ask it to go back to one step at a time.
   - **Codex:** chat only, or tell it "Don't edit my files."
