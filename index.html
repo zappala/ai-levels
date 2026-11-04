@@ -61,15 +61,26 @@
 <section id="activity">
   <h2>Trying the AI levels</h2>
   <p>Everyone in your cohort works on the same idea, learning or building with AI, but at different levels. Then you compare what you got and what you can explain.</p>
+  <div class="key-steps">
+    <div class="key-step">
+      <p class="key-step-number">1</p>
+      <h3>Split up the levels</h3>
+      <p>Each person in your cohort takes Level 1, 2, 3, or 4. If two people take the same level, work separately, each with your own AI chat.</p>
+    </div>
+    <div class="key-step">
+      <p class="key-step-number">2</p>
+      <h3>Watch the time</h3>
+      <p>You have 2 minutes to set up, 15 minutes to work, and 7 minutes to compare in your cohort.</p>
+    </div>
+  </div>
   <ul>
-    <li><strong>Split up the levels.</strong> Each person in your cohort takes Level 1, 2, 3, or 4. If two people take the same level, work separately, each with your own AI chat.</li>
-    <li><strong>Timing.</strong> You have 2 minutes to set up, 15 minutes to work, and 7 minutes to compare in your cohort.</li>
-    <li><strong>AI tools.</strong> Use ChatGPT/Codex or Claude for any level. See the notes in each level.</li>
+    <li><strong>Use AI tools appropriate for the level.</strong> ChatGPT/Codex or Claude work for any level. See the notes in each level.</li>
     <li><strong>Copy the prompts.</strong> Use the Copy buttons, and fill in anything in [brackets].</li>
     <li><strong>Running tests.</strong> If <code>pytest</code> isn't found, try <code>python3 -m pytest</code>, or install it with <code>pip install pytest</code>.</li>
     <li><strong>No Python on your laptop?</strong> Pair with a cohort member, or use the Colab link in your level.</li>
     <li><strong>Stuck?</strong> Ask your cohort first, then raise your hand.</li>
   </ul>
+  <p class="encourage"><strong>Don't worry if you don't finish in 15 minutes.</strong> That's OK. The main point is to learn how to work with AI, not to complete the task. Get as far as you can, bring what you learned to your cohort, and finish later.</p>
 </section>
 
 <section id="level1" class="level">
@@ -141,6 +152,10 @@
   <h2>Find the bug: AI points, you fix</h2>
   <p class="goal"><strong>Goal:</strong> use AI to find a bug, not to fix it. You make the fix, and the tests tell you when you're done.</p>
 
+  <h3>What the code does</h3>
+  <p>A leap year is a year with an extra day, February 29, which keeps the calendar in step with the Earth's trip around the sun. In <code>leap_year.py</code>, the function <code>is_leap_year(year)</code> should return <code>True</code> if a year is a leap year and <code>False</code> if it isn't. For example, 2024 was a leap year and 2023 wasn't.</p>
+  <p>The function has a bug, so some of the tests in <code>test_leap_year.py</code> fail. Your job is to find out why and fix it. The bonus function, <code>count_leap_years(start, end)</code>, should count how many leap years fall between two years, including both of them. It has a different bug.</p>
+
   <p>
     <a class="button" href="code/level2.zip" download>Download level2.zip</a>
     <a class="button secondary" href="https://colab.research.google.com/github/zappala/ai-levels/blob/main/colab/level2.ipynb">Open in Colab</a>
@@ -183,6 +198,13 @@
   <p class="level-tag">Level 3</p>
   <h2>Build it with AI as your guide</h2>
   <p class="goal"><strong>Goal:</strong> write a working function yourself, with AI explaining each decision, and be able to explain every line. This is how you'll work on Build Day.</p>
+
+  <h3>What's a Caesar cipher?</h3>
+  <p>A Caesar cipher is one of the oldest ways to write a secret message. Julius Caesar used it to protect his letters. You pick a number, called the <strong>shift</strong>, and replace each letter with the letter that many places later in the alphabet. When you run past Z, you wrap around to the start. With a shift of 3:</p>
+  <pre class="cipher">plain:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+cipher: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</pre>
+  <p>So <code>"Hello, World!"</code> becomes <code>"Khoor, Zruog!"</code>. Uppercase letters stay uppercase, lowercase letters stay lowercase, and spaces and punctuation don't change. To decrypt a message, you shift back by the same amount.</p>
+  <p>Your job is to write <code>caesar_encrypt(text, shift)</code> in <code>caesar.py</code>. The tests in <code>test_caesar.py</code> check it, including tricky cases like wrapping past Z, negative shifts, and shifts larger than 26. For the bonus, you'll write <code>crack_caesar</code> to break the cipher. That's possible because there are only 26 shifts to try.</p>
 
   <p>
     <a class="button" href="code/level3.zip" download>Download level3.zip</a>
