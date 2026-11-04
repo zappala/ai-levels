@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS 191: Using AI in the CS Major</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">CS 191 · Thursday, November 6, 2026</p>
+  <h1>Using AI in the CS Major</h1>
+  <nav aria-label="Sections">
+    <a href="#today">Today</a>
+    <a href="#gong">Elder Gong</a>
+    <a href="#guide">AI levels</a>
+    <a href="#activity">Activity</a>
+    <a href="#level1">Level 1</a>
+    <a href="#level2">Level 2</a>
+    <a href="#level3">Level 3</a>
+    <a href="#level4">Level 4</a>
+    <a href="#compare">Compare</a>
+    <a href="#wrap-up">Wrap-up</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="today">
+  <h2>Today</h2>
+  <table>
+    <thead><tr><th>Time</th><th>What we're doing</th></tr></thead>
+    <tbody>
+      <tr><td>0–5</td><td>Opening: how to use AI as disciple-scholars</td></tr>
+      <tr><td>5–15</td><td>Cohort discussion of Elder Gong's talk</td></tr>
+      <tr><td>15–20</td><td>The AI levels guide: your questions</td></tr>
+      <tr><td>20–44</td><td>Trying the AI levels: set up (2 min), work (15 min), compare in your cohort (7 min)</td></tr>
+      <tr><td>44–50</td><td>Wrap-up and what's coming up</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="gong">
+  <h2>Elder Gong: "An Ear to Wisdom, a Heart to Understanding"</h2>
+  <p><a class="button" href="https://speeches.byu.edu/talks/gerrit-w-gong/an-ear-to-wisdom-a-heart-to-understanding/">Read or watch the talk</a></p>
+  <ol>
+    <li>Discuss the response you turned in on Canvas with your cohort.</li>
+    <li>Group discussion moderated by the instructor.</li>
+  </ol>
+</section>
+
+<section id="guide">
+  <h2>The AI levels guide</h2>
+  <p><a class="button" href="https://claude.ai/public/artifacts/b1e35a55-f03f-4120-ba4f-b83a1ee3fc83">Open the AI levels guide</a></p>
+  <p>Each course sets the level of AI use that's allowed. One rule applies at every level:</p>
+  <p class="callout">Never submit anything you can't explain.</p>
+  <p>Have a question about the guide? Agree on one question as a cohort.</p>
+</section>
+
+<section id="activity">
+  <h2>Trying the AI levels</h2>
+  <p>Everyone in your cohort works on the same idea, learning or building with AI, but at different levels. Then you compare what you got and what you can explain.</p>
+  <ul>
+    <li><strong>Split up the levels.</strong> Each person in your cohort takes Level 1, 2, 3, or 4. If two people take the same level, work separately, each with your own AI chat.</li>
+    <li><strong>Timing:</strong> 2 minutes to set up, 15 minutes to work, 7 minutes to compare in your cohort.</li>
+    <li><strong>AI tools:</strong> ChatGPT/Codex or Claude for any level. See the notes in each level.</li>
+    <li><strong>Copy the prompts</strong> with the Copy buttons, and fill in anything in [brackets].</li>
+    <li><strong>Running tests:</strong> if <code>pytest</code> isn't found, try <code>python3 -m pytest</code>, or install it with <code>pip install pytest</code>.</li>
+    <li><strong>No Python on your laptop?</strong> Pair with a cohort member, or use the Colab link in your level.</li>
+    <li><strong>Stuck?</strong> Ask your cohort first, then raise your hand.</li>
+  </ul>
+</section>
+
+<section id="level1" class="level">
+  <p class="level-tag">Level 1</p>
+  <h2>Learn a topic with AI as your tutor</h2>
+  <p class="goal"><strong>Goal:</strong> notice the difference between "that made sense" and "I can explain it."</p>
+
+  <div class="topic-picker">
+    <h3>Pick a topic</h3>
+    <p>Choose one, then copy its question into the first prompt below.</p>
+    <div class="topics">
+      <div class="topic">
+        <h4>Public-key cryptography</h4>
+        <p class="topic-question">How can two people who've never met agree on a secret when everyone can see their messages?</p>
+      </div>
+      <div class="topic">
+        <h4>How LLMs work</h4>
+        <p class="topic-question">How does ChatGPT decide what word comes next, and why does it sometimes make things up?</p>
+      </div>
+      <div class="topic">
+        <h4>Dark patterns</h4>
+        <p class="topic-question">How do apps and websites use design to get me to do things I didn't intend to do?</p>
+      </div>
+      <div class="topic">
+        <h4>Shortest-path algorithms</h4>
+        <p class="topic-question">How does a maps app find the fastest route without checking every possible path?</p>
+      </div>
+      <div class="topic">
+        <h4>Version control</h4>
+        <p class="topic-question">How do teams of programmers work on the same code at the same time without overwriting each other's work?</p>
+      </div>
+      <div class="topic">
+        <h4>DNS</h4>
+        <p class="topic-question">When I type a web address, how does my computer find the right server among millions?</p>
+      </div>
+      <div class="topic">
+        <h4>P vs NP</h4>
+        <p class="topic-question">Why are some problems easy to check but seemingly impossible to solve quickly, and why does it matter?</p>
+      </div>
+      <div class="topic own">
+        <h4>Your own topic</h4>
+        <p class="topic-hint">Pick a topic from a class you're taking now, and write it as a question you can't answer yet.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>
+      <p>Ask for an explanation:</p>
+      <pre class="prompt">I'm a first-year CS student. Help me understand: [question]. Use an everyday example and keep it under 250 words. Don't quiz me yet.</pre>
+    </li>
+    <li>
+      <p><strong>No AI for this step.</strong> Scroll the answer off your screen. Without looking at it, write your own explanation in 3–5 sentences.</p>
+    </li>
+    <li>
+      <p>Check your understanding:</p>
+      <pre class="prompt">Here's my explanation in my own words: [your explanation] What did I get wrong or leave out? Don't rewrite it for me.</pre>
+    </li>
+    <li>
+      <p>Get quizzed:</p>
+      <pre class="prompt">Quiz me with 5 questions that check understanding, not memorization. Ask one at a time, wait for my answer, and tell me what I missed before asking the next.</pre>
+    </li>
+  </ol>
+</section>
+
+<section id="level2" class="level">
+  <p class="level-tag">Level 2</p>
+  <h2>Find the bug: AI points, you fix</h2>
+  <p class="goal"><strong>Goal:</strong> use AI to find a bug, not to fix it. You make the fix, and the tests tell you when you're done.</p>
+
+  <p>
+    <a class="button" href="code/level2.zip" download>Download level2.zip</a>
+    <a class="button secondary" href="https://colab.research.google.com/github/zappala/ai-levels/blob/main/colab/level2.ipynb">Open in Colab</a>
+  </p>
+
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>
+      <p>Unzip the files, open the <code>level2</code> folder in your editor, and run the tests in the editor's terminal. Read which tests fail and why.</p>
+      <pre class="command">pytest test_leap_year.py</pre>
+    </li>
+    <li>
+      <p><strong>Switch your editor's AI to a read-only mode</strong> so it can't change your code. In Codex, choose <strong>Chat</strong> mode. In Claude Code, use <strong>plan mode</strong> (Shift+Tab). Then ask:</p>
+      <pre class="prompt">Look at is_leap_year in leap_year.py and the failing tests in test_leap_year.py. Point me at the bug and explain why those tests fail. Don't edit any files, rewrite the code, or show me a fix.</pre>
+      <div class="alt">
+        <p><strong>Using a browser chat instead?</strong> Paste the function from <code>leap_year.py</code> and the failing test output, then this prompt:</p>
+        <pre class="prompt">Point me at the bug in this function and explain why these tests fail. Don't rewrite the code or show me a fix.</pre>
+      </div>
+    </li>
+    <li><p>Fix the bug yourself and rerun the tests until they all pass. If a test that used to pass starts failing, figure out why before asking the AI again.</p></li>
+    <li><p>If the AI changes or rewrites your code anyway, undo its changes (or unzip a fresh copy), close the chat, and fix it on your own.</p></li>
+  </ol>
+
+  <h3>Bonus, if you finish early</h3>
+  <p><code>count_leap_years</code> in the same file has a different kind of bug. Find it the same way.</p>
+  <pre class="command">pytest test_bonus.py</pre>
+
+  <details>
+    <summary>Show the code</summary>
+    <h4><code>leap_year.py</code></h4>
+    <pre class="code" data-src="code/level2/leap_year.py"></pre>
+    <h4><code>test_leap_year.py</code></h4>
+    <pre class="code" data-src="code/level2/test_leap_year.py"></pre>
+    <h4><code>test_bonus.py</code></h4>
+    <pre class="code" data-src="code/level2/test_bonus.py"></pre>
+  </details>
+</section>
+
+<section id="level3" class="level">
+  <p class="level-tag">Level 3</p>
+  <h2>Build it with AI as your guide</h2>
+  <p class="goal"><strong>Goal:</strong> write a working function yourself, with AI explaining each decision, and be able to explain every line. This is how you'll work on Build Day.</p>
+
+  <p>
+    <a class="button" href="code/level3.zip" download>Download level3.zip</a>
+    <a class="button secondary" href="https://colab.research.google.com/github/zappala/ai-levels/blob/main/colab/level3.ipynb">Open in Colab</a>
+  </p>
+
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>
+      <p>Unzip the files, open the <code>level3</code> folder in your editor, and run the tests in the editor's terminal. They all fail, because <code>caesar_encrypt</code> isn't written yet.</p>
+      <pre class="command">pytest test_caesar.py</pre>
+    </li>
+    <li>
+      <p><strong>Switch your editor's AI to a read-only mode</strong> so it can't write the code for you. In Codex, choose <strong>Chat</strong> mode. In Claude Code, use <strong>plan mode</strong> (Shift+Tab), and if it asks to start editing, say no. Then ask:</p>
+      <pre class="prompt">I need to implement caesar_encrypt in caesar.py. First suggest an approach in plain words. Then walk me through it one step at a time. Don't edit any files and don't write the whole function. Give me one piece, explain why, and wait for me to write it. Then read caesar.py to check my work before moving on.</pre>
+      <div class="alt">
+        <p><strong>Using a browser chat instead?</strong> Paste the <code>caesar_encrypt</code> stub from <code>caesar.py</code>, then this prompt. Paste your code back after each step.</p>
+        <pre class="prompt">I need to implement this function. First suggest an approach in plain words. Then walk me through it one step at a time. Don't write the whole function. Give me one piece, explain why, and wait for me to write it and show you before moving on.</pre>
+      </div>
+    </li>
+    <li><p><strong>Type every line yourself.</strong> If the AI gives you the whole function or edits your file, don't keep it. Undo the change and ask it to go back to one step at a time.</p></li>
+    <li><p>Run the tests until they all pass.</p></li>
+  </ol>
+
+  <h3>Bonus, if you finish early</h3>
+  <p>Write <code>crack_caesar</code>, which finds the shift used to encrypt a message when you know one word in it. Same rules: AI guides, you type.</p>
+  <pre class="command">pytest test_bonus.py</pre>
+
+  <details>
+    <summary>Show the code</summary>
+    <h4><code>caesar.py</code></h4>
+    <pre class="code" data-src="code/level3/caesar.py"></pre>
+    <h4><code>test_caesar.py</code></h4>
+    <pre class="code" data-src="code/level3/test_caesar.py"></pre>
+    <h4><code>test_bonus.py</code></h4>
+    <pre class="code" data-src="code/level3/test_bonus.py"></pre>
+  </details>
+</section>
+
+<section id="level4" class="level">
+  <p class="level-tag">Level 4</p>
+  <h2>You plan it, AI builds it</h2>
+  <p class="goal"><strong>Goal:</strong> turn a vague problem into a clear plan, with AI as your design partner, before any code is written. Then check that the code AI writes does what <em>you</em> decided.</p>
+
+  <p>There are no starter files. Here's the whole problem:</p>
+  <p class="callout">Write a program that splits a restaurant bill among friends.</p>
+
+  <h3>Steps</h3>
+  <ol class="steps">
+    <li>
+      <p>Make an empty folder (for example, <code>level4</code>) and open it in your editor.</p>
+    </li>
+    <li>
+      <p><strong>Plan with the AI. No code yet.</strong> Switch your editor's AI to a read-only mode so it doesn't jump ahead to coding. In Codex, choose <strong>Chat</strong> mode. In Claude Code, use <strong>plan mode</strong> (Shift+Tab). Then ask:</p>
+      <pre class="prompt">I need to write a program that splits a restaurant bill among friends. Before writing any code, ask me questions about what this program should do. Ask one at a time. Point out ambiguities and edge cases I haven't thought about.</pre>
+    </li>
+    <li><p><strong>Write a short plan yourself:</strong> the inputs, the outputs, the decisions you made, the edge cases, and the functions the program needs. Save it as <code>plan.md</code> in your folder.</p></li>
+    <li>
+      <p><strong>Have the AI review your plan and build it.</strong> Now switch to a mode that can edit files. In Codex, choose <strong>Agent</strong> mode. In Claude Code, leave plan mode (Shift+Tab). Then ask:</p>
+      <pre class="prompt">Read my plan in plan.md and critique the design. Then write the code and pytest tests that follow it.</pre>
+    </li>
+    <li><p>Run the tests yourself, then try the program. Check that it does what your plan says, not just that the tests pass.</p></li>
+  </ol>
+
+  <div class="alt">
+    <p><strong>Using a browser chat instead?</strong> Use the first prompt above as is. For step 4, paste your plan with this prompt, then save the code and tests it gives you into files and run them.</p>
+    <pre class="prompt">Here's my plan: [your plan] Critique the design. Then write the code and pytest tests that follow it.</pre>
+    <p>No Python on your laptop? Paste the code into a <a href="https://colab.research.google.com/#create=true">new Colab notebook</a>.</p>
+  </div>
+</section>
+
+<section id="compare">
+  <h2>Compare in your cohort</h2>
+  <p>Each level shares: <strong>What did you get, and what can you explain?</strong></p>
+  <ul>
+    <li><strong>Level 1:</strong> explain your topic in 30 seconds, without notes. What worked well, what didn't, and how would you use this in your own learning?</li>
+    <li><strong>Level 2:</strong> what did the AI point you at, what was your fix, and did a new test break along the way?</li>
+    <li><strong>Level 3:</strong> explain your function line by line to a cohort member, and answer their questions about it.</li>
+    <li><strong>Level 4:</strong> compare plans. What questions came up, what did each of you decide, and how different are your programs? How well does your design handle the change your instructor announces?</li>
+  </ul>
+</section>
+
+<section id="wrap-up">
+  <h2>Wrap-up</h2>
+</section>
+
+</main>
+
+<script src="site.js"></script>
+</body>
+</html>
